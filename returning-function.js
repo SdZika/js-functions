@@ -1,0 +1,3 @@
+function makeMultiplier(number, operation){
+    
+}
