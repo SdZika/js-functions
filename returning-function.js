@@ -6,6 +6,6 @@ function makeMultiplier(num){
 
 const multiplierNum = makeMultiplier(2);
 
-console.log(multiplierNum);
+
 
 console.log(multiplierNum(4));
