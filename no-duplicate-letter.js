@@ -2,23 +2,23 @@
 
 function firstNonRepeatingCharacter(s) {
     //make array of given strings
-    let arrayOfString = s.split("");
+    //let arrayOfString = s.split("");
     //take first letter in array
-    for (let j = 0; j < arrayOfString.length; j++) {
-        let letter = arrayOfString[j];
+    for (let j = 0; j < s.length; j++) {
+        //let letter = s[j];
         let counter = 0;
         //loop through array to see if there is duplicate
-        for (let i = 0; i < arrayOfString.length; i++){
-            if (letter === arrayOfString[i]) {
+        for (let i = 0; i < s.length; i++){
+            if (s[j] === s[i]) {
                 counter += 1;
                 
             }
         }
         if (counter === 1) {
-            return letter;
+            return s[j];
         };
     }
 }
     
-const testString = "swiss";
+const testString = "ssbbvvkktdduomarko";
 console.log("The first non-repeating character is:", firstNonRepeatingCharacter(testString)); // Output: "w"
